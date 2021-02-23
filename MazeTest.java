@@ -143,18 +143,7 @@ public class MazeTest {
 		System.out.println(maze5.path());
 		System.out.println("=================");
 		System.out.println("Program Completed");
-		System.out.println("=================\n");
-		
-		//make sure files are the same
-		BufferedReader out = new BufferedReader(new FileReader("data/MazeSolver.txt")); 
-		BufferedReader in = new BufferedReader(new FileReader("data/Expected.txt")); 
-
-		while ((expected = in.readLine()) != null) {
-			String actualLine = out.readLine();
-			assertEquals(expected, actualLine);
-		}
-		out.close();
-		in.close();		
+		System.out.println("=================\n");		
 		
 		//size 6 
 		//bfs test
